@@ -1,0 +1,190 @@
+\documentclass{article_saj}
+\pagestyle{myheadings}
+\usepackage{graphicx,saj,multicol,subeqnarray}
+\usepackage{natbib}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{widetext}
+\usepackage{url}
+\usepackage{bm}
+\usepackage{tikz} % for checkmark
+\usepackage{pifont} % for xmark
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath,upgreek}
+\usepackage{titlesec}
+\input{astro}
+\titlelabel{\thetitle.\quad}
+\definecolor{xlinkcolor}{cmyk}{1,0.6,0,0}
+\usepackage[bookmarks=false,         % show bookmarks bar?
+     pdfnewwindow=true,      % links in new window
+     colorlinks=true,    % false: boxed links; true: colored links
+     linkcolor=xlinkcolor,     % color of internal links
+     citecolor=xlinkcolor,     % color of links to bibliography
+     filecolor=xlinkcolor,  % color of file links
+     urlcolor=xlinkcolor,      % color of external links
+final=true
+]{hyperref}
+
+% Papertype can be "Invited Review", "Original Scientific Paper",
+% "Preliminary report" or "Professional paper"
+
+\def\papertype{\ \hfill\ Editorial}
+
+\setcounter{page}{1}
+\setcounter{firstpage}{1}
+\setcounter{lastpage}{5}
+
+\citestyle{kluwer}%
+
+\setcounter{footnote}{0}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+%
+\parindent=.5cm
+\baselineskip=3.8truemm
+\columnsep=.5truecm
+%
+
+\newenvironment{lefteqnarray}{\arraycolsep=0pt\begin{eqnarray}}
+{\end{eqnarray}\protect\aftergroup\ignorespaces}
+\newenvironment{lefteqnarray*}{\arraycolsep=0pt\begin{eqnarray*}}
+{\end{eqnarray*}\protect\aftergroup\ignorespaces}
+\newenvironment{leftsubeqnarray}{\arraycolsep=0pt\begin{subeqnarray}}
+{\end{subeqnarray}\protect\aftergroup\ignorespaces}
+%
+
+% Runningtitle
+\markboth{\eightrm TITOLO PAGINE 1} 
+{\eightrm TITOLO PAGINE 2}
+
+\begin{strip}
+
+
+%%%% INTESTAZIONE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% TITOLO
+\title{TITOLO DELLA RELAZIONE}
+% AUTORI
+\authors{A. Cipriano$^{1}$, A. Cardinale$^{2}$ e A. Bandiera$^{3}$}
+\vskip3mm
+% INFORMAZIONI AUTORI
+\address{Dipartimento di Fisica, Corso di laurea in Fisica, Università di Roma 
+La Sapienza\break matricole: $^1$2149050, $^2$2128502, $^3$2128394}
+
+
+
+
+
+
+%%%% ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\abstract{
+
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{strip}
+\tenrm
+
+
+
+%%%% SEZIONE 1: INTRODUZIONE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTRODUZIONE}
+\indent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+%%% SEZIONE 2: APPARATO SPERIMENTALE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{APPARATO SPERIMENTALE}
+\indent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+%%% SEZIONE 3: PROCEDURA SPERIMENTALE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PROCEDURA SPERIMENTALE}
+\indent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+%%% SEZIONE 4: RISULTATI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{RISULTATI}
+\indent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+%%% SEZIONE 5: CONCLUSIONI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{CONCLUSIONI}
+\indent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+% References
+%\vskip2mm
+
+\newcommand\eprint{in press }
+
+\bibsep=0pt
+
+\bibliographystyle{aa_url_saj}
+
+{\small
+
+\bibliography{bibliografia}
+}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       C O M P I L I N G
+% You must compile your LaTeX source text "mysource.tex" in THE following
+% way:
+%  pdflatex mysource
+%  bibtex mysource
+%  pdflatex mysource
+%  pdflatex mysource
+% Compiling twice is required to set all the parameters needed
+% (lastpage, labels...) properly. It will also generate the mysource.bbl
+% with your bibliography.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

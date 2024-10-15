@@ -1,0 +1,47 @@
+################ NOTE ######################
+
+- per inserire una figura o una tabella su più colonne aggiungere un aterisco dopo la denominazione
+
+
+################ IMMAGINI ##################
+
+\begin{figure}[h]
+     \centerline{\includegraphics[width=1\columnwidth, keepaspectratio]{immagini/grafici_final/best-fit_all_plots_v2.png}}
+     \caption{Grafici dei dati sperimentali con sovrapposte le curve di best-fit per le oscillazioni della molla al variare della massa.
+     I grafici riportati in figura sono stati ottenuti in seguito alla rimozione degli outliers e fanno riferimento alla molla impiegata
+     nell'acquisizione dei dati in laboratorio.}
+     \label{fig5}
+\end{figure}
+
+
+################ TABELLE ##################
+
+\begin{table*}[h]
+     \caption{{Risultati dei fit numerici usando come modelli l'equazione dell'oscillatore semplice e quella dell'oscillatore
+     smorzato.}}
+     \vskip.25cm
+     \centerline{\begin{tabular}{cccccccccc}
+     \hline
+     modello fit &massa [g] & offset [cm] & A [cm] & $\omega$ [rad/s] & $\phi$ [rad] & $\tau$ [s]&$\chi^2_{rid}$\\
+     \hline
+     oscillatore semplice &973.8 $\pm$ 0.1 & 19.45 $\pm$ 0.02 & 1.87 $\pm$ 0.02 & 10.7 $\pm$ 0.1 & -6.75 $\pm$ 0.04 & & 2.7\\
+     oscillatore smorzato &973.8 $\pm$ 0.1 & 19.44 $\pm$ 0.01 & 2.9 $\pm$ 0.1 & 10.75 $\pm$ 0.04&  -6.76 $\pm$ 0.02 & 11 $\pm$ 1 & 1.6\\
+ 
+     \hline
+     \end{tabular}}
+     \label{table3}
+\end{table*}
+
+
+################ EQUAZIONI ##################
+
+\begin{equation}
+     \frac{d^2x}{dt^2} + \omega^2 x = 0
+     \label{eq:2}
+\end{equation}
+
+################ RIFERIMENTI ##################
+
+\ref{eq:5} 
+\ref{fig1} 
+\ref{table3} 

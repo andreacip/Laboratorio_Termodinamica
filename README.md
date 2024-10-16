@@ -99,7 +99,7 @@ Segui questi passaggi per clonare e inizializzare il progetto in locale e poter 
 Per iniziare, clona questo repository sul tuo computer locale utilizzando Git. Apri il terminale o Git Bash e digita il seguente comando:
 
 ```bash
-git clone https://github.com/tuo-utente/tuo-repository.git
+git clone https://github.com/andreacip/Laboratorio_Termodinamica.git
 ```
 
 Dato che questo repository è privato, dovrai autenticarti per clonarlo e lavorarci. 
@@ -132,7 +132,7 @@ Sostituisci `nome-del-tuo-branch` con un nome descrittivo per il tuo branch.
 Se hai fatto il fork del repository e vuoi collegare la tua copia locale al repository originale per mantenere aggiornato il progetto, puoi aggiungere un **remote upstream**:
 
 ```bash
-git remote add upstream https://github.com/tuo-utente/tuo-repository.git
+git remote add upstream https://github.com/andreacip/Laboratorio_Termodinamica.git
 ```
 
 Verifica che il collegamento sia stato aggiunto correttamente:

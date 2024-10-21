@@ -127,61 +127,6 @@ git checkout -b nome-del-tuo-branch
 
 Sostituisci `nome-del-tuo-branch` con un nome descrittivo per il tuo branch.
 
-### 4. Collegamento con il Repository Remoto (in caso di fork)
-
-Se hai fatto il fork del repository e vuoi collegare la tua copia locale al repository originale per mantenere aggiornato il progetto, puoi aggiungere un **remote upstream**:
-
-```bash
-git remote add upstream https://github.com/andreacip/Laboratorio_Termodinamica.git
-```
-
-Verifica che il collegamento sia stato aggiunto correttamente:
-
-```bash
-git remote -v
-```
-
-### 5. Invia le Tue Modifiche
-
-Dopo aver fatto le modifiche al codice, segui questi passaggi per inviarle al repository:
-
-1. Aggiungi i file modificati allo stage:
-   ```bash
-   git add .
-   ```
-
-2. Crea un commit con una descrizione delle tue modifiche:
-   ```bash
-   git commit -m "Descrizione delle modifiche"
-   ```
-
-3. Invia (push) il tuo branch al repository remoto:
-   ```bash
-   git push origin nome-del-tuo-branch
-   ```
-
-### 6. Sincronizzare il Progetto con il Repository Remoto
-
-Se altre persone hanno apportato modifiche al repository mentre stavi lavorando, è consigliabile sincronizzare il tuo branch con il branch principale (`main` o `master`). Puoi farlo eseguendo un pull dal repository remoto:
-
-```bash
-git pull upstream main
-```
-
-Oppure, se il branch principale è `master`:
-
-```bash
-git pull upstream master
-```
-
-### 7. Crea una Pull Request
-
-Dopo aver inviato le tue modifiche, puoi creare una **Pull Request** su GitHub per proporre le tue modifiche al progetto principale.
-
-1. Vai sul repository su GitHub.
-2. Clicca su **Pull Requests**.
-3. Clicca su **New Pull Request** e seleziona il branch su cui hai lavorato.
-4. Descrivi le modifiche e invia la Pull Request.
 
 
 

@@ -12,6 +12,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsmath,upgreek}
+
 \usepackage{titlesec}
 \input{astro}
 \titlelabel{\thetitle.\quad}
@@ -74,7 +75,7 @@ final=true
 \vskip3mm
 % INFORMAZIONI AUTORI
 \address{Dipartimento di Fisica, Corso di laurea in Fisica, Università di Roma 
-La Sapienza\break matricole: $^1$2149050, $^2$000000, $^3$00000}
+La Sapienza\break matricole: $^1$2149050, $^2$2129732, $^3$2140217}
 
 
 
@@ -92,7 +93,8 @@ La Sapienza\break matricole: $^1$2149050, $^2$000000, $^3$00000}
      in un thermos a temperatura ambiente, misurando la temperatura inziale e finale 
      del corpo si è ricavato, tramite il primo principio della termodinamica il calore 
      specifico del materiale. Il calore latente è stato determinato sciogliendo il 
-     ghiaccio in acqua a temperatura controllata. I risultati mostrano (scrivere cosa mostrano).
+     ghiaccio in acqua a temperatura controllata. I risultati mostrano che i materiali risultano essere
+     compatibili con alluminio, ottone, marmo e okite.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -116,7 +118,7 @@ della temperatura finale $T_f$ e dunque l'equilibrio termico. Se come sistema pr
 di massa $m_1$ a temperatura iniziale $T_1$ che viene immerso in acqua a temperatura $T_{i,acq}$
 e possibile calcolare il calore specifico come:
 \begin{equation}
-     c_1 = \frac{c_{acq}(m_{acq} + M_e)(T_{i,acq} - T_1)}{m_1(T_f - T_1)}
+     c_1 = \frac{c_{acq}(m_{acq} + M_e)(T_{i,acq} - T_f)}{m_1(T_f - T_1)}
      \label{eq:2}
 \end{equation}
 dove $c_{acq}$ è il calore specifico dell'acqua e $M_e$ la massa equivalente
@@ -206,6 +208,39 @@ una (motivare).
 
 %%% SEZIONE 4: RISULTATI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{RISULTATI}
+Per la misura del calore specifico dell'alluminio, sono state effettuate 5 misure, mentre per gli altri materiali due.
+In tabella \ref{table1} è stata riportata la media pesata con le incertezze, la deviazione standard del campione e la deviazione standard  della media.
+Essendo il campione statisticamente poco rilevante a causa dell'esiguo numero di misure, è stata calcolata anche
+la deviazione standard della media pesata $\sigma_p$.
+Come si puo notare dal grafico in figura \ref{fig2}, 
+i valori misurati, tranne il Quarzo, riusltano essere compatibili entro le incertezze sperimentali con i valori noti. Probabilmente,
+oltre agli effetti sistematici, il motivo dell'incompatibilità del quarto materiale con il quarzo è dovuto al fatto che si tratta di okite, un
+materiale che seppur composto principalmente da quarzo, viene miscelato con resine, vetro e materiali ferrosi che ne alterano la struttura e le propietà fisiche.
+Le misure risultano essere molto grossolane, con errori assoluti anche superiori al 50 \%, questo è dovuto principalmente alla variazione di temperatura
+durante l'esperimento che risulta essere molto piccola, dell'ordine di $1-2 ^\circ\text{C}$, nella misura del calore latente di fusione del ghiaccio, infatti, in cui la variazione 
+di temperatura è risultata essere maggiore l'errore relativo è risultato essere molto piu basso e pari circa al 3 \%. Inoltre potrebbero essere presenti
+errori sistematici dovuti alla dispersione termica di calore durante le procedure, come l'apertura e la chiusura del thermos, al fatto che il thermos non 
+isola completamente il sistema dall'amabiente esterno.
+
+
+
+
+
+\begin{figure}[ht]
+     \centerline{\includegraphics[width=0.9\columnwidth, keepaspectratio]{distribuzione_cs_alluminio.png}}
+     \caption{Distribuzione delle 5 misure di calore specifico per il materiale 1.}
+     \label{fig1}
+\end{figure}
+
+\begin{figure}[ht]
+     \centerline{\includegraphics[width=0.9\columnwidth, keepaspectratio]{compatibilita_cs.png}}
+     \caption{Compatibilità tra misure effettuate e valori noti, consultati sul sito www.matweb.com,
+     in cui i valori riportati fanno riferimento al manuale CRC Handbook of Chemistry and Physics, Robert C. Weast, Ed. 62 Edition, CRC Press, Boca Raton, FL, 1981.}
+     \label{fig2}
+\end{figure}
+
+
+
 \indent
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -214,10 +249,45 @@ una (motivare).
 
 
 
-
-
 %%% SEZIONE 5: CONCLUSIONI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{CONCLUSIONI}
+Nel complesso, l'esperimento ha fornito risultati soddisfacenti per la maggior parte dei materiali testati, 
+sebbene ci sia margine per migliorare la precisione e ridurre gli errori sistematici con ulteriori accorgimenti sperimentali.
+
+\begin{table}[ht]
+     \caption{{Valori del calore specifico in $cal/gK$ ottenuti per i diversi materiali analizzati.}}
+     \vskip.25cm
+     \centerline{\begin{tabular}{ccccc}
+     \hline
+     Materiale & $\mu$ & $\sigma$ & $\sigma_m$ & $\sigma_p$ \\
+     \hline
+     1  & 0.20 & 0.04 & 0.02 & 0.04 \\
+     2  & 0.060 &  0.01 & 0.01 & 0.03 \\
+     3  & 0.07 &  0.03 & 0.02 & 0.05 \\
+     4  & 0.26 &  0.01 & 0.004 & 0.1 \\
+ 
+     \hline
+     \end{tabular}}
+     \label{table1}
+\end{table}
+
+
+\begin{table}[ht]
+     \caption{{Misure effettuate per il calore latente del ghiaccio. 
+     le misure di masse sono riportate in g 
+          mentre quelle di temperature in $^\circ\text{C}$, il calore latente del ghiaccio è invece espresso in $cal/g$}}
+     \vskip.25cm
+     \centerline{\begin{tabular}{cccccc}
+     \hline
+     $m_a $ & $T_a $ & $T_f$ & $m_g$ & $\lambda_g$ & $\sigma_{\lambda_g}$ \\
+     \hline
+     238.4  & 52.4 & 28.4 & 63.2 & 72 & 2\\
+     231.5  & 55.0 &  24.6 & 75.6 & 78 & 3\\
+ 
+     \hline
+     \end{tabular}}
+     \label{table2}
+\end{table}
 \indent
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
